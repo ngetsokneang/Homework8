@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.menu{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.menu .menu-bar{
+    position: absolute;
+    width: 100%;
+    padding: 0 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 10px;
+}
+.menu .swiper-button-next::after{
+    content: "";
+    position: absolute;
+    border: 2px;
+    background-color: gray;
+    border-radius: 50%;
+    padding: 25px;
+    font-size: 20px;
+    right: 0;
+    opacity: .6;
+    bottom: 200px;
+}
+.menu .swiper-button-prev::after{
+    content: "";
+    position: absolute;
+    border: 2px;
+    background-color: gray;
+    border-radius: 50%;
+    padding: 25px;
+    font-size: 20px;
+    bottom: 200px;
+    left: 2px;
+    opacity: .6;
+}
+.menu-bar .logo-name .nav-link{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: bold;
+    position: absolute;
+    top: 15px;
+    z-index: 10;
+}
+.menu-bar .logo-name .nav-link span{
+    color: gold;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar-nav{
+    padding: 20px 0;
+}
+.navbar-nav .nav-item{
+    display: inline-block;
+    margin: 0 20px;
+}
+.navbar-nav .nav-item .nav-link{
+    text-decoration: none;
+    color: rgb(156, 92, 92);
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+    position: relative;
+    z-index: 1000;
+    padding: 5px 0;
+    transition: 5s al;
+}
+.navbar-nav .nav-item .nav-link:hover{
+    color: #fff;
+}
+.navbar-nav .nav-item .nav-link span::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 3px;
+    background: gold;
+    color: #fff;
+    top: 27px;
+    left: 0px;
+}
+.fa-chevron-down{
+    margin-left: 5px;
+}
+.navbar-nav .nav-item .nav-link::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background: gold;
+    top: 27px;
+    left: 0px;
+    transition: width 0.5s;
+}
+.navbar-nav .nav-item .nav-link:hover::after{
+    width: 100%;
+}
+.navbar-nav .nav-item .dropdown{
+    width: 230px;
+    background-color: #fff;
+    display: none;
+    position: absolute;
+    top: 50px;
+    z-index: 9;
+}
+.navbar-nav .nav-item .dropdown .navbar-nav{
+    flex-direction: column;
+}
+.navbar-nav .nav-item:hover .dropdown{
+    display: block;
+}
+.navbar-nav .nav-item .dropdown .navbar-nav .nav-item{
+    padding: 20px 0;
+}
+.navbar-nav .nav-item .dropdown .navbar-nav .nav-item .nav-link{
+    font-size: 15px;
+    color: red;
+}
+.title{
+    width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+
+
+
+
+
